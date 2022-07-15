@@ -9,11 +9,11 @@
 ---
 
 ### Games
-- `game_internal_isColliding(x1, y1, x2, y2)`
-- `game_jump(x, y, jump_height)`
+- `game_internal_isColliding(x1, y1, x2, y2, ts)`
+- `game_internal_check_for_tile_collisions(px, py, tl, ts)`
+- `game_jump(x, y, jump_height, canvas, gravity, tps, tile_list)`
 - `game_draw_player(x, y, ts, canvas)`
 - `game_move_player(x, y, ts, canvas)`
-- `game_tickloop(fps)`
 
 ---
 
