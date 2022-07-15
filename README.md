@@ -18,5 +18,6 @@
 ---
 
 ### Physics
+- `physics_internal_to_radians()`
 - `physics_generate_angle_motions()`
 - `physics_get_motion_from_angle(angle)`
