@@ -82,8 +82,8 @@ angle_list = [];
 function physics_generate_angle_motions() { // This is very slow, but thankfully it's only ran once on bootup, so it isn't noticeable
 	for (var degree = 0; degree < 360; degree++) {
         angle_list[degree] = {
-            x: Math.round(Math.sin(physics_iternal_to_radians(degree)) * 1000) / 1000,
-            y: Math.round(-Math.cos(physics_iternal_to_radians(degree)) * 1000) / 1000
+            x: Math.round(Math.sin(physics_internal_to_radians(degree)) * 1000) / 1000,
+            y: Math.round(-Math.cos(physics_internal_to_radians(degree)) * 1000) / 1000
         }
     }
     return true;
