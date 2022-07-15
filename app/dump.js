@@ -51,7 +51,7 @@ function game_move_player(x, y, ts, canvas) {
 	ctx.closePath();
 }
 
-function game_jump(ts, jump_height, canvas, gravity, tps, tile_list) {
+async function game_jump(ts, jump_height, canvas, gravity, tps, tile_list) {
 	var y_offset = jump_height;
 	for (var i = 0; i < 100; i++) {
 		await sleep(tps);
