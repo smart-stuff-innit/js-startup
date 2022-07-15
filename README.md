@@ -4,7 +4,7 @@
 
 ### Important
 - `sleep(ms)`
-- `create_canvas(layer)`
+- `generate_canvas(layer)`
 
 ---
 
