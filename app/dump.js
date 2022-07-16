@@ -36,6 +36,14 @@ function game_internal_check_for_tile_collisions(px, py, tl, ts) {
 	return false;
 }
 
+function game_draw_tile(x, y, ts, canvas, color) {
+	var ctx = canvas.getContext("2d");
+	ctx.beginPath();
+	ctx.fillStyle = color;
+	ctx.fillRect(x, y, ts, ts);
+	ctx.closePath();
+}
+
 function game_draw_player(x, y, ts, canvas) {
 	var ctx = canvas.getContext("2d");
 	ctx.beginPath();
@@ -68,6 +76,14 @@ async function game_jump(ts, jump_height, canvas, gravity, tps, tile_list) {
 			py -= 1;
 			game_move_player(px, py, ts, canvas);
 			return;
+		}
+	}
+}
+
+function game_tile_block(x, y, w, h, ts, canvas, color) { // W and H should be in tiles
+	for (var cx = 0; cx < w; cx++) {
+		for (var cy = 0; cy < h; cy++) {
+			game_draw_tile(x + (cx * ts), y + (cy * ts), ts, canvas, color);
 		}
 	}
 }
