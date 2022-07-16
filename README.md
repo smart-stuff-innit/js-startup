@@ -14,6 +14,8 @@
 - `game_jump(x, y, jump_height, canvas, gravity, tps, tile_list)`
 - `game_draw_player(x, y, ts, canvas)`
 - `game_move_player(x, y, ts, canvas)`
+- `game_draw_tile(x, y, ts, canvas, color)`
+- `game_tile_block(x, y, w, h, ts, canvas, color)`
 
 ---
 
