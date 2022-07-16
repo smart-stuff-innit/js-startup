@@ -18,6 +18,7 @@ function sleep(ms) {
 
 // GAME FUNCTIONS
 
+tile_list = []
 px = 0;
 py = 0;
 
@@ -42,6 +43,7 @@ function game_draw_tile(x, y, ts, canvas, color) {
 	ctx.fillStyle = color;
 	ctx.fillRect(x, y, ts, ts);
 	ctx.closePath();
+	tile_list.push(x, y);
 }
 
 function game_draw_player(x, y, ts, canvas) {
